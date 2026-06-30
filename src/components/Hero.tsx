@@ -85,7 +85,7 @@ export default function Hero() {
 
           {/* Brand name */}
           <motion.div style={{ y: textY, opacity: textOpacity }} className="text-center px-6">
-            <h1 className="font-display text-5xl md:text-8xl lg:text-9xl xl:text-[10rem] font-light tracking-[0.2em] text-champagne-50 mb-6">
+            <h1 className="font-display text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-light tracking-[0.2em] text-champagne-50 mb-6">
               {"DELAVIZ".split("").map((char, i) => (
                 <motion.span
                   key={i}
