@@ -163,6 +163,159 @@ export const products: Product[] = [
     images: ["/images/IMG_20260628_230901_365.jpg", "/images/IMG_20260628_161228_690.jpg"],
     featured: false,
     collection: "Spirit Collection"
+  },
+  {
+    id: "lilium-half-set",
+    name: "Lilium Half Set",
+    price: 780,
+    category: "sets",
+    description: "A stunning sterling silver half set inspired by the delicate beauty of lily blossoms. The matching necklace and earring pair creates a harmonious statement of floral elegance.",
+    details: [
+      "925 Sterling Silver",
+      "Handcrafted lily blossom design",
+      "Necklace length: 42cm, Earrings drop: 4cm",
+      "Matching set with signature packaging",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp", "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-3-scaled.webp"],
+    featured: true,
+    collection: "Lilium Collection"
+  },
+  {
+    id: "lilium-earrings",
+    name: "Lilium Silver Earrings",
+    price: 320,
+    category: "earrings",
+    description: "Delicate lily-inspired earrings handcrafted in sterling silver. Each petal is individually sculpted to capture the flower's natural grace and femininity.",
+    details: [
+      "925 Sterling Silver",
+      "Hand-sculpted lily petal design",
+      "Drop length: 4.5cm",
+      "Lever-back closure",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/گوشواره-نقره-لیلیوم-گالری-دلاویز-1-600x739.webp", "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp"],
+    featured: true,
+    collection: "Lilium Collection"
+  },
+  {
+    id: "cascade-flower-earrings",
+    name: "Cascade Bloom Earrings",
+    price: 290,
+    category: "earrings",
+    description: "Flowing silver cascade earrings adorned with hand-formed flower elements. These earrings create a mesmerizing dance of light and movement with every step.",
+    details: [
+      "925 Sterling Silver",
+      "Hand-formed cascade flower design",
+      "Drop length: 6cm",
+      "Fish hook closure",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/گوشواره ریسه ای شکوفه نقره.jpg", "/images/گوشواره-نقره-لیلیوم-گالری-دلاویز-1-600x739.webp"],
+    featured: false,
+    collection: "Lilium Collection"
+  },
+  {
+    id: "lilium-necklace",
+    name: "Lilium Blossom Necklace",
+    price: 520,
+    category: "necklaces",
+    description: "A captivating sterling silver necklace featuring hand-sculpted lily blossoms along a delicate chain. A wearable garden of artisan-crafted beauty.",
+    details: [
+      "925 Sterling Silver",
+      "Hand-sculpted lily blossom charms",
+      "Chain length: 40-45cm adjustable",
+      "Lobster clasp closure",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/گردنبند-گل-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp", "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-3-scaled.webp"],
+    featured: false,
+    collection: "Lilium Collection"
+  },
+  {
+    id: "horse-clasp-pendant",
+    name: "Equestrian Clasp Pendant",
+    price: 445,
+    category: "necklaces",
+    description: "A bold equestrian-inspired pendant featuring a horse clasp motif, handcrafted in sterling silver. A tribute to strength, loyalty, and the timeless bond between rider and steed.",
+    details: [
+      "925 Sterling Silver",
+      "Hand-sculpted horse clasp design",
+      "Chain length: 42cm",
+      "Weight: 18g",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/اسب-قفل-تی-1-گالری-دلاویز-600x685.webp", "/images/IMG_20260628_230901_365.jpg"],
+    featured: false,
+    collection: "Spirit Collection"
+  },
+  {
+    id: "horse-horseshoe-pendant",
+    name: "Fortune Horse Pendant",
+    price: 510,
+    category: "necklaces",
+    description: "A striking pendant combining a horse and horseshoe motif, handcrafted in sterling silver. Symbolizing luck and freedom, this piece is a talisman of good fortune.",
+    details: [
+      "925 Sterling Silver with antiqued finish",
+      "Horse and horseshoe motif",
+      "Chain length: 45cm",
+      "Weight: 22g",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/آویز-اسب-و-نعل-اسب-دلاویز-گالری-scaled.webp", "/images/اسب-قفل-تی-1-گالری-دلاویز-600x685.webp"],
+    featured: false,
+    collection: "Spirit Collection"
+  },
+  {
+    id: "artisan-银ring",
+    name: "Artisan Heritage Ring",
+    price: 350,
+    category: "rings",
+    description: "A bold, hand-forged silver ring with organic textures that celebrate the raw beauty of artisan metalwork. Each ring carries unique marks of its creation.",
+    details: [
+      "925 Sterling Silver",
+      "Hand-forged organic texture",
+      "Band width: 10mm",
+      "Available in sizes 5-12",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/New folder/IMG_4513.JPG", "/images/IMG_20260628_161228_275.jpg"],
+    featured: false,
+    collection: "Artisan Series"
+  },
+  {
+    id: "silver-wire-bracelet",
+    name: "Silver Wire Wrap Bracelet",
+    price: 265,
+    category: "bracelets",
+    description: "An intricate wire-wrapped bracelet handcrafted from sterling silver. The organic wrapping technique creates a one-of-a-kind piece that wraps the wrist in artisan luxury.",
+    details: [
+      "925 Sterling Silver wire",
+      "Hand-wrapped design",
+      "Length: 17cm with 2cm extension",
+      "Toggle clasp closure",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/New folder/IMG_5320.JPG", "/images/IMG_20260628_161228_201.jpg"],
+    featured: false,
+    collection: "Artisan Series"
+  },
+  {
+    id: "pendant-necklace-silver",
+    name: "Silver Charm Necklace",
+    price: 395,
+    category: "necklaces",
+    description: "A delicate chain adorned with hand-crafted silver charms. Each charm is individually made, creating a necklace that tells a story of craftsmanship and attention to detail.",
+    details: [
+      "925 Sterling Silver",
+      "Hand-crafted charm elements",
+      "Chain length: 42cm",
+      "Spring ring clasp",
+      "Delaviz signature packaging"
+    ],
+    images: ["/images/New folder/IMG_5365.JPG", "/images/IMG_20260628_231439_823.JPG"],
+    featured: false,
+    collection: "Celestial Series"
   }
 ];
 
@@ -184,7 +337,13 @@ export const collections = [
     name: "Artisan Series",
     description: "Celebrating the ancient craft of hand-weaving and sculpting",
     image: "/images/IMG_20260628_161228_201.jpg"
+  },
+  {
+    id: "lilium",
+    name: "Lilium Collection",
+    description: "Delicate floral designs inspired by the beauty of lily blossoms",
+    image: "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp"
   }
 ];
 
-export const categories = ["all", "necklaces", "rings", "bracelets", "earrings"];
+export const categories = ["all", "necklaces", "rings", "bracelets", "earrings", "sets"];
