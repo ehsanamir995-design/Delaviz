@@ -156,6 +156,13 @@ export default function CartDrawer() {
                 >
                   Continue Shopping
                 </Link>
+                <Link
+                  href="/cart"
+                  onClick={closeCart}
+                  className="block w-full text-center font-sans text-[10px] tracking-[0.2em] uppercase text-gold-500/70 hover:text-gold-500 transition-colors py-2"
+                >
+                  View Full Bag
+                </Link>
               </div>
             )}
           </motion.div>

@@ -61,16 +61,20 @@ export default function Footer() {
               Information
             </h4>
             <div className="space-y-3">
-              {["Shipping & Returns", "Size Guide", "Care Instructions", "Authenticity"].map(
-                (item) => (
-                  <span
-                    key={item}
-                    className="block font-sans text-xs text-onyx-300 hover:text-gold-500 transition-colors duration-300 tracking-wide cursor-pointer"
-                  >
-                    {item}
-                  </span>
-                )
-              )}
+              {[
+                { href: "/shop", label: "Shipping & Returns" },
+                { href: "/shop", label: "Size Guide" },
+                { href: "/about", label: "Care Instructions" },
+                { href: "/about", label: "Authenticity" },
+              ].map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="block font-sans text-xs text-onyx-300 hover:text-gold-500 transition-colors duration-300 tracking-wide"
+                >
+                  {link.label}
+                </Link>
+              ))}
             </div>
           </div>
 
@@ -109,14 +113,12 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Delaviz. All rights reserved.
           </p>
           <div className="flex gap-6">
-            {["Privacy Policy", "Terms of Service"].map((item) => (
-              <span
-                key={item}
-                className="font-sans text-[10px] text-onyx-500 hover:text-onyx-300 transition-colors cursor-pointer tracking-wider"
-              >
-                {item}
-              </span>
-            ))}
+            <span className="font-sans text-[10px] text-onyx-500 tracking-wider">
+              Privacy Policy
+            </span>
+            <span className="font-sans text-[10px] text-onyx-500 tracking-wider">
+              Terms of Service
+            </span>
           </div>
         </div>
       </div>

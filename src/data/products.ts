@@ -75,7 +75,7 @@ export const products: Product[] = [
       "Lightweight for all-day wear",
       "Delaviz signature packaging"
     ],
-    images: ["/images/IMG_20260628_231439_139.HEIC", "/images/IMG_20260628_231439_034.HEIC"],
+    images: ["/images/IMG_20260628_161228_201.jpg", "/images/IMG_20260628_161228_690.jpg"],
     featured: true,
     collection: "Celestial Series"
   },
@@ -92,7 +92,7 @@ export const products: Product[] = [
       "Weight: 28g",
       "Delaviz signature packaging"
     ],
-    images: ["/images/IMG_20260628_231407_746.HEIC", "/images/IMG_20260628_231408_068.HEIC"],
+    images: ["/images/IMG_20260628_230901_365.jpg", "/images/IMG_20260628_230917_089.jpg"],
     featured: false,
     collection: "Spirit Collection"
   },
@@ -109,7 +109,7 @@ export const products: Product[] = [
       "Hinged opening mechanism",
       "Delaviz signature packaging"
     ],
-    images: ["/images/IMG_20260628_231408_295.HEIC", "/images/IMG_20260628_231439_005.HEIC"],
+    images: ["/images/IMG_20260628_161228_275.jpg", "/images/IMG_20260628_161228_201.jpg"],
     featured: false,
     collection: "Artisan Series"
   },
@@ -126,7 +126,7 @@ export const products: Product[] = [
       "Safety clasp closure",
       "Delaviz signature packaging"
     ],
-    images: ["/images/IMG_20260628_231456_744.HEIC", "/images/IMG_20260628_161228_275.jpg"],
+    images: ["/images/IMG_20260628_231439_823.JPG", "/images/IMG_20260628_161228_275.jpg"],
     featured: false,
     collection: "Celestial Series"
   },
@@ -160,7 +160,7 @@ export const products: Product[] = [
       "French hook closure",
       "Delaviz signature packaging"
     ],
-    images: ["/images/IMG_20260628_231439_139.HEIC", "/images/IMG_20260628_231408_295.HEIC"],
+    images: ["/images/IMG_20260628_230901_365.jpg", "/images/IMG_20260628_161228_690.jpg"],
     featured: false,
     collection: "Spirit Collection"
   }
@@ -171,7 +171,7 @@ export const collections = [
     id: "spirit",
     name: "Spirit Collection",
     description: "Pieces that capture the essence of freedom and transformation",
-    image: "/images/IMG_20260628_231407_746.HEIC"
+    image: "/images/IMG_20260628_230901_365.jpg"
   },
   {
     id: "celestial",

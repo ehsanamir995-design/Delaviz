@@ -59,7 +59,7 @@ export default function CollectionsPage() {
                   }}
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-                    <div className={`order-2 lg:order-${index % 2 === 0 ? "1" : "2"}`}>
+                    <div className={`order-2 ${index % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}>
                       <div className="aspect-[4/3] relative overflow-hidden">
                         <Image
                           src={collection.image}
@@ -72,7 +72,7 @@ export default function CollectionsPage() {
                       </div>
                     </div>
 
-                    <div className={`order-1 lg:order-${index % 2 === 0 ? "2" : "1"}`}>
+                    <div className={`order-1 ${index % 2 === 0 ? "lg:order-2" : "lg:order-1"}`}>
                       <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-gold-500/70 block mb-4">
                         Collection {String(index + 1).padStart(2, "0")}
                       </span>

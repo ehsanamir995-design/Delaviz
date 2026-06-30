@@ -50,7 +50,7 @@ export default function AboutPage() {
       <section ref={heroRef} className="relative h-[80vh] overflow-hidden">
         <motion.div style={{ y: imageY }} className="absolute inset-0">
           <Image
-            src="/images/IMG_20260628_231407_746.HEIC"
+            src="/images/IMG_20260628_230901_365.jpg"
             alt="Delaviz artisan at work"
             fill
             sizes="100vw"

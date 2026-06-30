@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ChevronLeft, CreditCard, Lock, Check } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CartDrawer from "@/components/CartDrawer";
 import { useCartStore } from "@/store/cart";
 
 export default function CheckoutPage() {
@@ -44,6 +45,7 @@ export default function CheckoutPage() {
     return (
       <main className="min-h-screen">
         <Header />
+        <CartDrawer />
         <div className="pt-40 pb-20 text-center section-padding">
           <h1 className="font-display text-4xl text-champagne-50 mb-4">
             Your Bag is Empty
@@ -64,6 +66,7 @@ export default function CheckoutPage() {
     return (
       <main className="min-h-screen">
         <Header />
+        <CartDrawer />
         <div className="pt-40 pb-20 text-center section-padding">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -94,8 +97,9 @@ export default function CheckoutPage() {
   }
 
   return (
-    <main className="min-h-screen">
-      <Header />
+      <main className="min-h-screen">
+        <Header />
+        <CartDrawer />
 
       <div className="pt-28 pb-8 section-padding">
         <div className="max-w-[1200px] mx-auto">
