@@ -127,7 +127,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={loaded ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 2.5 }}
-              className="font-serif text-base md:text-lg text-onyx-200/60 max-w-md mx-auto italic"
+              className="font-serif text-sm md:text-lg text-onyx-200/60 max-w-md mx-auto italic"
             >
               Where artistry meets the eternal
             </motion.p>
