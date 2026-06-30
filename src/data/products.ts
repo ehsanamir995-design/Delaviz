@@ -267,7 +267,7 @@ export const products: Product[] = [
     collection: "Spirit Collection"
   },
   {
-    id: "artisan-银ring",
+    id: "artisan-heritage-ring",
     name: "Artisan Heritage Ring",
     price: 350,
     category: "rings",
@@ -279,7 +279,7 @@ export const products: Product[] = [
       "Available in sizes 5-12",
       "Delaviz signature packaging"
     ],
-    images: ["/images/New folder/IMG_4513.JPG", "/images/IMG_20260628_161228_275.jpg"],
+    images: ["/images/new-folder/IMG_4513.JPG", "/images/IMG_20260628_161228_275.jpg"],
     featured: false,
     collection: "Artisan Series"
   },
@@ -296,7 +296,7 @@ export const products: Product[] = [
       "Toggle clasp closure",
       "Delaviz signature packaging"
     ],
-    images: ["/images/New folder/IMG_5320.JPG", "/images/IMG_20260628_161228_201.jpg"],
+    images: ["/images/new-folder/IMG_5320.JPG", "/images/IMG_20260628_161228_201.jpg"],
     featured: false,
     collection: "Artisan Series"
   },
@@ -313,7 +313,7 @@ export const products: Product[] = [
       "Spring ring clasp",
       "Delaviz signature packaging"
     ],
-    images: ["/images/New folder/IMG_5365.JPG", "/images/IMG_20260628_231439_823.JPG"],
+    images: ["/images/new-folder/IMG_5365.JPG", "/images/IMG_20260628_231439_823.JPG"],
     featured: false,
     collection: "Celestial Series"
   }
