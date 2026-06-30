@@ -57,7 +57,6 @@ export default function Hero() {
             loop
             playsInline
             className="w-full h-full object-cover"
-            poster="/images/HERO-IMAGE.jpeg"
           >
             <source src="/videos/HERO-VIDEO.mp4" type="video/mp4" />
           </video>
