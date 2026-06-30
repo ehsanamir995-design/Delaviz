@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, use, useRef } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,10 +15,9 @@ import { useCartStore } from "@/store/cart";
 export default function ProductPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: { id: string };
 }) {
-  const resolvedParams = use(params);
-  const product = products.find((p) => p.id === resolvedParams.id);
+  const product = products.find((p) => p.id === params.id);
   const [selectedImage, setSelectedImage] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
