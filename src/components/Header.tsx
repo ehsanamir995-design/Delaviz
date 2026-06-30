@@ -41,7 +41,7 @@ export default function Header() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
           scrolled
             ? "glass-light shadow-luxury py-4"
-            : "bg-transparent py-6"
+            : "bg-transparent py-6 pointer-events-none"
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between">
