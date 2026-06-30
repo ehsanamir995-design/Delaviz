@@ -1,0 +1,35 @@
+
+> delaviz-ecommerce@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3001
+
+ ✓ Starting...
+ ✓ Ready in 16.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 52.9s (1330 modules)
+ ✓ Compiled in 4.1s (659 modules)
+ GET / 200 in 3116ms
+ GET / 200 in 135ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 2.4s (703 modules)
+ GET /favicon.ico 200 in 2872ms
+ GET / 200 in 552ms
+ ✓ Compiled in 7s (1330 modules)
+ GET / 200 in 3805ms
+ GET / 200 in 609ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.4s (1333 modules)
+ GET /_next/static/css/app/layout.css?v=1782760206588 404 in 3075ms
+ GET /_next/static/chunks/webpack.js?v=1782760206588 404 in 3178ms
+ GET /_next/static/chunks/main-app.js?v=1782760206588 404 in 3173ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 3123ms
+ GET /_next/static/chunks/app/page.js 404 in 3140ms
+ GET /_next/static/css/app/layout.css?v=1782760210310 404 in 51ms
+ GET / 200 in 555ms
+ GET /_next/static/css/app/layout.css?v=1782760329533 404 in 213ms
+ GET /_next/static/chunks/main-app.js?v=1782760329533 404 in 242ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 239ms
+ GET /_next/static/chunks/app/page.js 404 in 231ms
