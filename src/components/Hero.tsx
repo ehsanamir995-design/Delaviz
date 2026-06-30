@@ -19,7 +19,7 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const videoScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.15]);
+  const videoScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.05]);
   const overlayOpacity = useTransform(scrollYProgress, [0, 0.5], [0.45, 0.7]);
   const textY = useTransform(scrollYProgress, [0, 0.4], [0, -120]);
   const textOpacity = useTransform(scrollYProgress, [0.2, 0.5], [1, 0]);
