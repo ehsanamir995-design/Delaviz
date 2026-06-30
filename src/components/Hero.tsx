@@ -41,14 +41,14 @@ export default function Hero() {
       ref={containerRef}
       className="relative h-[200vh] overflow-hidden"
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center bg-onyx-950">
         {/* Video / Poster Background */}
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           animate={loaded ? { scale: 1, opacity: 1 } : {}}
           transition={{ duration: 1.8, ease: [0.25, 0.1, 0.25, 1] }}
           style={{ scale: videoScale }}
-          className="absolute inset-0"
+          className="absolute inset-0 lg:max-w-5xl lg:mx-auto lg:my-auto lg:h-[75vh] lg:aspect-[16/9]"
         >
           <video
             ref={videoRef}
