@@ -70,8 +70,8 @@ export default function ContactPage() {
                   {
                     icon: Phone,
                     label: "Phone",
-                    value: "+1 (234) 567-890",
-                    href: "tel:+1234567890",
+                    value: "+98 920 292 1374",
+                    href: "tel:+989202921374",
                   },
                   {
                     icon: MapPin,

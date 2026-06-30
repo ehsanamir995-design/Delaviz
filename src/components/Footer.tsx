@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useLang } from "@/lib/language-context";
 
 export default function Footer() {
+  const { t } = useLang();
+
   return (
     <footer className="bg-onyx-950 border-t border-gold-500/10">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 py-20">
@@ -13,19 +16,20 @@ export default function Footer() {
               DELAVIZ
             </h3>
             <p className="font-serif text-sm text-onyx-300 italic leading-relaxed mb-6">
-              Where artistry meets the eternal. Handcrafted luxury jewelry 
-              born from passion, shaped by master artisans.
+              {t.manifestoP1.slice(0, 80)}...
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://instagram.com/delaviz.jewelry"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 border border-onyx-600 flex items-center justify-center text-onyx-300 hover:border-gold-500 hover:text-gold-500 transition-all duration-300"
                 aria-label="Instagram"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
               <a
-                href="#"
+                href="mailto:hello@delaviz.com"
                 className="w-9 h-9 border border-onyx-600 flex items-center justify-center text-onyx-300 hover:border-gold-500 hover:text-gold-500 transition-all duration-300"
                 aria-label="Email"
               >
@@ -36,14 +40,14 @@ export default function Footer() {
 
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-gold-500 mb-6">
-              Quick Links
+              {t.quickLinks}
             </h4>
             <div className="space-y-3">
               {[
-                { href: "/shop", label: "Shop All" },
-                { href: "/collections", label: "Collections" },
-                { href: "/about", label: "Our Story" },
-                { href: "/contact", label: "Contact" },
+                { href: "/shop", label: t.shopAll },
+                { href: "/collections", label: t.collections },
+                { href: "/about", label: t.ourStory },
+                { href: "/contact", label: t.contact },
               ].map((link) => (
                 <Link
                   key={link.href}
@@ -58,14 +62,14 @@ export default function Footer() {
 
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-gold-500 mb-6">
-              Information
+              {t.informationFooter}
             </h4>
             <div className="space-y-3">
               {[
-                { href: "/shop", label: "Shipping & Returns" },
-                { href: "/shop", label: "Size Guide" },
-                { href: "/about", label: "Care Instructions" },
-                { href: "/about", label: "Authenticity" },
+                { href: "/shop", label: t.shippingReturns },
+                { href: "/shop", label: t.sizeGuide },
+                { href: "/about", label: t.careInstructions },
+                { href: "/about", label: t.authenticity },
               ].map((link) => (
                 <Link
                   key={link.label}
@@ -80,7 +84,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-sans text-[10px] tracking-[0.3em] uppercase text-gold-500 mb-6">
-              Get in Touch
+              {t.getInTouchFooter}
             </h4>
             <div className="space-y-4">
               <a
@@ -91,11 +95,11 @@ export default function Footer() {
                 <span className="font-sans text-xs tracking-wide">hello@delaviz.com</span>
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+989202921374"
                 className="flex items-center gap-3 text-onyx-300 hover:text-gold-500 transition-colors"
               >
                 <Phone size={14} strokeWidth={1.5} />
-                <span className="font-sans text-xs tracking-wide">+1 (234) 567-890</span>
+                <span className="font-sans text-xs tracking-wide">+98 920 292 1374</span>
               </a>
               <div className="flex items-start gap-3 text-onyx-300">
                 <MapPin size={14} strokeWidth={1.5} className="mt-0.5 flex-shrink-0" />
@@ -110,14 +114,14 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-onyx-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-sans text-[10px] text-onyx-500 tracking-wider">
-            &copy; {new Date().getFullYear()} Delaviz. All rights reserved.
+            &copy; {new Date().getFullYear()} Delaviz. {t.allRightsReserved}
           </p>
           <div className="flex gap-6">
             <span className="font-sans text-[10px] text-onyx-500 tracking-wider">
-              Privacy Policy
+              {t.privacyPolicy}
             </span>
             <span className="font-sans text-[10px] text-onyx-500 tracking-wider">
-              Terms of Service
+              {t.termsOfService}
             </span>
           </div>
         </div>

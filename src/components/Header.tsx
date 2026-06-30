@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShoppingBag, Menu, X } from "lucide-react";
 import { useCartStore } from "@/store/cart";
+import { useLang } from "@/lib/language-context";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -13,6 +14,7 @@ export default function Header() {
   const pathname = usePathname();
   const { toggleCart } = useCartStore();
   const itemCount = useCartStore((s) => s.items.length);
+  const { lang, toggleLang, t } = useLang();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 100);
@@ -25,11 +27,11 @@ export default function Header() {
   }, [pathname]);
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/shop", label: "Shop" },
-    { href: "/collections", label: "Collections" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: t.home },
+    { href: "/shop", label: t.shop },
+    { href: "/collections", label: t.collections },
+    { href: "/about", label: t.about },
+    { href: "/contact", label: t.contact },
   ];
 
   return (
@@ -74,7 +76,15 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
+            <button
+              onClick={toggleLang}
+              className="font-sans text-[10px] tracking-[0.15em] uppercase text-onyx-200 hover:text-gold-500 transition-colors duration-300 border border-onyx-600 hover:border-gold-500 px-3 py-1.5"
+              aria-label="Toggle language"
+            >
+              {lang === "en" ? "FA" : "EN"}
+            </button>
+
             <button
               onClick={toggleCart}
               className="relative text-onyx-200 hover:text-gold-500 transition-colors duration-300"
@@ -112,6 +122,14 @@ export default function Header() {
             transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
             className="fixed inset-0 z-40 bg-onyx-950/98 backdrop-blur-xl flex flex-col items-center justify-center gap-8"
           >
+            <button
+              onClick={toggleLang}
+              className="absolute top-6 right-6 font-sans text-[10px] tracking-[0.15em] uppercase text-onyx-200 hover:text-gold-500 transition-colors duration-300 border border-onyx-600 hover:border-gold-500 px-3 py-1.5"
+              aria-label="Toggle language"
+            >
+              {lang === "en" ? "FA" : "EN"}
+            </button>
+
             {navLinks.map((link, i) => (
               <motion.div
                 key={link.href}
