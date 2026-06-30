@@ -177,7 +177,7 @@ export const products: Product[] = [
       "Matching set with signature packaging",
       "Delaviz signature packaging"
     ],
-    images: ["/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp", "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-3-scaled.webp"],
+    images: ["/images/lilium-set-2.webp", "/images/lilium-set-3.webp"],
     featured: true,
     collection: "Lilium Collection"
   },
@@ -194,7 +194,7 @@ export const products: Product[] = [
       "Lever-back closure",
       "Delaviz signature packaging"
     ],
-    images: ["/images/گوشواره-نقره-لیلیوم-گالری-دلاویز-1-600x739.webp", "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp"],
+    images: ["/images/lilium-earring-1.webp", "/images/lilium-set-2.webp"],
     featured: true,
     collection: "Lilium Collection"
   },
@@ -211,7 +211,7 @@ export const products: Product[] = [
       "Fish hook closure",
       "Delaviz signature packaging"
     ],
-    images: ["/images/گوشواره ریسه ای شکوفه نقره.jpg", "/images/گوشواره-نقره-لیلیوم-گالری-دلاویز-1-600x739.webp"],
+    images: ["/images/cascade-flower-earring.jpg", "/images/lilium-earring-1.webp"],
     featured: false,
     collection: "Lilium Collection"
   },
@@ -228,7 +228,7 @@ export const products: Product[] = [
       "Lobster clasp closure",
       "Delaviz signature packaging"
     ],
-    images: ["/images/گردنبند-گل-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp", "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-3-scaled.webp"],
+    images: ["/images/lilium-necklace-2.webp", "/images/lilium-set-3.webp"],
     featured: false,
     collection: "Lilium Collection"
   },
@@ -245,7 +245,7 @@ export const products: Product[] = [
       "Weight: 18g",
       "Delaviz signature packaging"
     ],
-    images: ["/images/اسب-قفل-تی-1-گالری-دلاویز-600x685.webp", "/images/IMG_20260628_230901_365.jpg"],
+    images: ["/images/horse-clasp-1.webp", "/images/IMG_20260628_230901_365.jpg"],
     featured: false,
     collection: "Spirit Collection"
   },
@@ -262,7 +262,7 @@ export const products: Product[] = [
       "Weight: 22g",
       "Delaviz signature packaging"
     ],
-    images: ["/images/آویز-اسب-و-نعل-اسب-دلاویز-گالری-scaled.webp", "/images/اسب-قفل-تی-1-گالری-دلاویز-600x685.webp"],
+    images: ["/images/horse-horseshoe-pendant.webp", "/images/horse-clasp-1.webp"],
     featured: false,
     collection: "Spirit Collection"
   },
@@ -342,7 +342,7 @@ export const collections = [
     id: "lilium",
     name: "Lilium Collection",
     description: "Delicate floral designs inspired by the beauty of lily blossoms",
-    image: "/images/نیم-ست-لیلیوم-نقره-گالری-دلاویز-2-scaled.webp"
+    image: "/images/lilium-set-2.webp"
   }
 ];
 
